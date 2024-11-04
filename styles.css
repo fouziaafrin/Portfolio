@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4e1e1; /* Light pastel background (pale pink) */
+    color: #333;
+}
+
+header {
+    background: #ff6f61; /* Warm peach primary color */
+    color: #ffffff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#welcome-section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px; /* Space for fixed navbar */
+}
+
+#welcome-section h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    color: #ff6f61; /* Warm peach color */
+}
+
+#welcome-section p {
+    font-size: 1.2em;
+    max-width: 600px; /* Limiting width for better readability */
+    color: #333; /* Text color for readability */
+}
+
+section {
+    padding: 60px 20px; /* Padding adjusted for fixed navbar */
+    margin: 10px;
+}
+
+.project-tile {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px; /* Rounded corners */
+    background: #ffffff; /* White background for tiles */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-tile h3 {
+    color: #ff6f61; /* Warm peach color for project titles */
+}
+
+.project-tile a {
+    color: #6fbf92; /* Light mint green for links */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff6f61; /* Warm peach for the footer */
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #welcome-section {
+        padding: 20px;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+}
